@@ -1,0 +1,17 @@
+{
+  "name": "cdms-refresh",
+  "homepage": "https://github.com/kenburcham/cdms-refresh",
+  "description": "prototype platform",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-grid": "^4.0.6"
+  }
+}
