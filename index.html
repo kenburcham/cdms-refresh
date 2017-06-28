@@ -1,17 +1,32 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="app">
 
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular-touch.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular-animate.js"></script>
+  <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+  <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+  <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+  <script src="http://ui-grid.info/release/ui-grid.js"></script>
+  <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <div>
+  <div class="container">
     <label>Name:</label>
     <input type="text" ng-model="yourName" placeholder="Enter a name here">
     <hr>
     <h1>Hello {{yourName}}!</h1>
   </div>
+
+  <div class="the-grid" ng-controller="MainCtrl">
+      <div id="grid1" ui-grid="{ data: myData }" class="grid"></div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
